@@ -1,0 +1,64 @@
+.order {
+    background-image: url("/assets/image/order_bg.png");
+    background-position: top center;
+    background-repeat: no-repeat;
+    padding-bottom: 180px;
+    overflow: hidden;
+}
+.order .wrapper {
+    position: relative;
+}
+.order-image {
+    position: absolute;
+    top: 0;
+    right: calc(100% - 764px);
+    z-index: 1;
+}
+.order-form {
+    background: $color-product;
+    border: 1px solid $color-border-product;
+    border-radius: 16px;
+    margin-top: 60px;
+    max-width: 426px;
+    box-sizing: border-box;
+    padding: 60px 40px;
+    margin-left: 674px;
+}
+.order-form-text {
+    @include font ($weight: 600, $size:24px, $height: 29px);
+    text-align: center;
+}
+.order-form-inputs {
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+}
+.order-form-input {
+    background: $button-bg;
+    width: 344px;
+    height: 62px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.order-form-input.error {
+  background: $color-main;
+}
+
+.order-form-input input {
+    padding: 20px 10px;
+    background: $color-product;
+    border-radius: 8px;
+    width: 342px;
+    height: 60px;
+    box-sizing: border-box;
+    outline: none;
+    border: 1px solid transparent;
+    color: $color-light;
+}
+.order-form-inputs .button {
+    width: 344px;
+    height: 62px;
+}

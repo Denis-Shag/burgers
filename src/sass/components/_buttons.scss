@@ -1,0 +1,33 @@
+.button {
+    background: $button-bg;
+    border-radius: 8px;
+    width: 260px;
+    height: 62px;
+    box-sizing: border-box;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0;
+    cursor: pointer;
+    outline: none;
+    transition: all .3s;
+    @include font ($weight: 600, $size: 18px, $height: 22px);
+    color: $color-text;
+    &_product {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 182px;
+        height: 62px;
+    }
+    &:hover {
+        background: $button-bg-active;
+    }
+}
+
+.button:disabled {
+  cursor: not-allowed;
+  color: gray;
+  background: #343434;
+}

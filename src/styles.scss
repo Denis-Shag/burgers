@@ -1,0 +1,24 @@
+/* You can add global styles to this file, and also import other style files */
+@import "./sass/base/normalize";
+// ========== Abstracts ========== //
+@import "./sass/abstracts/constants";
+@import "./sass/abstracts/mixin";
+@import "./sass/abstracts/placeholder";
+@import "./sass/abstracts/variables";
+// ========== base ========== //
+@import "./sass/base/base";
+@import "./sass/base/typography";
+// ========== Components ========== //
+@import "./sass/components/fonts";
+@import "./sass/components/buttons";
+@import "./sass/components/navigation";
+@import "./sass/components/main";
+@import "./sass/components/why";
+@import "./sass/components/products";
+@import "./sass/components/order";
+@import "./sass/components/loader";
+// ========== Layout ========== /
+@import "./sass/layout/header";
+@import "./sass/layout/wrapper";
+@import "./sass/layout/footer";
+@import "./sass/layout/adaptive";

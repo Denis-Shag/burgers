@@ -1,0 +1,33 @@
+.menu {
+    margin-left: 191px;
+}
+.menu-list {
+    list-style: none;
+    display: flex;
+}
+.menu-item {
+    margin-right: 88px;
+}
+.menu-item a {
+    text-decoration: none;
+    cursor: pointer;
+    color: $color-light;
+    @include font ($weight: 600, $size: 18px, $height: 22px);
+    @extend %font-main;
+    &:hover {
+        border-bottom: 2px solid $color-light;
+    }
+}
+.currency {
+    border: 1px solid $color-border;
+    border-radius: 5px;
+    width: 45px;
+    height: 45px;
+    padding: 6px;
+    box-sizing: border-box;
+    text-align: center;
+    cursor: pointer;
+    line-height: 32px;
+    margin-left: auto;
+    user-select: none;
+}

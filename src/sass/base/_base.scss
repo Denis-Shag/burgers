@@ -1,0 +1,5 @@
+body {
+    background-color: $color-bg;
+    color: $color-light;
+    @extend %font-main;
+}
